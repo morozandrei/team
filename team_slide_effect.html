@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Slide Effect - team members</title>
+    <style>
+        body {
+            background-color: #222;
+            font-family: arial;
+            margin: 0;
+        }
+        .our_team {
+            background-color: #333;
+            margin-top: 100px;
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .our_team_title {
+            color: white;
+        }
+        .profile {
+            /*background-color: lightslategray;*/
+            text-align: center;
+            color: white;
+        }
+        .wrapper {
+            background-color: lightslategray;
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .avatar {
+            width: 300px;
+            transition: 1s;
+        }
+        .avatar:hover {
+            margin-top: -200px;
+        }
+        ol {
+            padding: 0;
+            list-style: none;
+        }
+        .name:hover {
+            color:orangered;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- section vs header  
+         'header' = группа вводных и навигационных средств (headings, search form, logo, author name, etc.) 
+         'section' = представляет автономный раздел, который группирует
+          связанные по смыслу элементы (обычно имеют заголовок)  -->
+       
+    <section class="our_team">
+        <h1 class="our_team_title">Our Team</h1>
+        <ul>
+            <li class="profile">
+                <div class="wrapper"> 
+                    <!--better than div choice-->
+                    <!--the 'section' can be better than 'div' in this case-->
+                    <img class="avatar" src="images/avatar.jpg" alt="Andrei M.">
+                    <h3>Personal Skills</h3>
+                    <ol>
+                        <li>Smart</li>
+                        <li>Fast</li>
+                        <li>Punctual</li>
+                    </ol>
+                </div>    
+                <h2><span class="name">Andrei M.</span></h2>
+                <p><span class="name">Team Lead</span></p>
+            </li>
+            <li class="profile">2</li>
+            <li class="profile">3</li>
+        </ul>
+    </section>
+    
+</body>
+</html>
